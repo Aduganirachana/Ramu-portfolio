@@ -47,7 +47,7 @@ const Teachings = () => {
         {teachings.map((teaching, index) => (
           <motion.div
             key={index}
-            className="bg-white shadow-md p-4 rounded-lg w-60 text-gray-700 font-semibold cursor-pointer hover:bg-purple-200"
+            className="bg-white shadow-md p-4 rounded-lg w-60 text-gray-700 font-semibold cursor-pointer hover:bg-purple-400 hover:text-white"
             whileHover={{ scale: 1.1 }}
             onClick={() => setSelectedTeaching(teaching)}
           >
@@ -59,7 +59,7 @@ const Teachings = () => {
       {/* Display Selected Teaching Details */}
       {selectedTeaching && (
         <motion.div
-          className="mt-8 p-6 bg-white shadow-lg rounded-lg max-w-xl mx-auto"
+          className="mt-8 p-6 bg-white shadow shadow-gray-400 shadow-xl rounded-xl max-w-xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -67,7 +67,7 @@ const Teachings = () => {
           <h3 className="text-2xl font-bold text-purple-600">{selectedTeaching.title}</h3>
           <p className="text-gray-700 mt-2">{selectedTeaching.details}</p>
           <button 
-            className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg"
+            className="mt-8  px-5 py-2 bg-red-500 hover:bg-red-700 text-white rounded-lg"
             onClick={() => setSelectedTeaching(null)}
           >
             Close
