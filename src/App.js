@@ -1,9 +1,9 @@
 import './App.css';
-import Navbar from './component/Navbar.js';
-import Hero from './component/Hero.js';
-import About from './component/About.js';
-import Teachings from './component/Teachings.js';
-import Connect from './component/Connect.js';
+import Navbar from './component/Navbar.jsx';
+import Hero from './component/Hero.jsx';
+import About from './component/About.jsx';
+import Teachings from './component/Teachings.jsx';
+import Connect from './component/Connect.jsx';
 
 function App() {
   return (
