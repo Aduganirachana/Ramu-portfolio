@@ -1,4 +1,4 @@
-import './App.css';
+import './app.css';
 import Navbar from './component/Navbar.js';
 import Hero from './component/Hero.js';
 import About from './component/About.js';
