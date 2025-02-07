@@ -7,13 +7,14 @@ import Connect from './component/Connect.jsx';
 
 function App() {
   return (
-   <div>
-    <Navbar />
-    <Hero />
-    <About />
-    <Teachings />
-    <Connect />
-  </div>
+    // Tailwind container for responsive spacing and layout
+    <div className="container mx-auto p-4">
+      <Navbar />
+      <Hero />
+      <About />
+      <Teachings />
+      <Connect />
+    </div>
   );
 }
 
